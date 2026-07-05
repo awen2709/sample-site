@@ -1,30 +1,25 @@
 <!doctype html>
-<!-- index.html: Welcome page and site entry. Header/navigation is shared across pages. -->
+<!-- contact.html: Contact page with email and socials. -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Artistic Swim Library — Welcome</title>
-  <!-- Google Font: Inter -->
+  <title>Contact — Artistic Swim</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="page--fade">
-  <!-- Site header/navigation -->
   <header class="site-header" role="banner">
     <div class="container--nav">
       <a class="brand" href="index.html">Awen ArtSwim</a>
       <nav class="nav" role="navigation" aria-label="Main navigation">
         <ul class="nav__list">
           <li><a href="index.html">Home</a></li>
-
-          <!-- Library dropdown -->
           <li class="dropdown">
             <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Library ▾</button>
             <ul class="dropdown__menu">
               <li class="submenu">
                 <a href="library.html">Figures</a>
-                <!-- Figures nested dropdown -->
                 <ul class="dropdown__menu nested">
                   <li><a href="figures/10u.html">10U</a></li>
                   <li><a href="figures/12u.html">12U</a></li>
@@ -39,28 +34,19 @@
               </li>
             </ul>
           </li>
-
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="site-main">
-    <!-- Hero / Welcome section -->
-    <section class="hero">
-      <h1>Welcome to the Artistic Swim Library</h1>
-      <p class="lead">A curated catalogue of skills and figures across age categories — clear, concise, and mobile-friendly.</p>
-      <p class="cta"><a class="btn" href="library.html">Explore the Library</a></p>
-    </section>
-
-    <!-- Short explainer -->
-    <section class="about">
-      <h2>What you'll find</h2>
-      <ul>
-        <li>Skill lists organized by age group (Figures & Elements)</li>
-        <li>Short descriptions (placeholders) and links to each skill page</li>
-        <li>Contact details and social links</li>
+  <main class="site-main contact-main">
+    <section>
+      <h1>Contact Abigail</h1>
+      <p>Questions, corrections, or suggestions — reach out!</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:abigail.wen2027@gmail.com">abigail.wen2027@gmail.com</a></li>
+        <li>Instagram: <a href="https://instagram.com/awen.artswim2027" target="_blank" rel="noopener">@awen.artswim2027</a></li>
       </ul>
     </section>
   </main>
