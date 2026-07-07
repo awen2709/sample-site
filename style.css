@@ -86,4 +86,7 @@ body{
 /* Accessibility focus styles */
 a:focus, button:focus, .search-input:focus{outline:3px solid rgba(111,210,255,0.12);outline-offset:2px}
 
+/* Contact page links */
+.contact-list a{color:#ffffff}
+
 /* end of style.css */
