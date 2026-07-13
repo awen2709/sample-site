@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="page--fade">
+  <!-- Floating particles container -->
+  <div class="particles-container">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+  </div>
   <!-- Site header/navigation -->
   <header class="site-header" role="banner">
     <div class="container--nav">
@@ -22,23 +29,8 @@
           <li class="dropdown">
             <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Library ▾</button>
             <ul class="dropdown__menu">
-              <li class="submenu">
-                <a href="figures.html">Figures</a>
-                <ul class="dropdown__menu nested">
-                  <li><a href="figures/10u.html">10U</a></li>
-                  <li><a href="figures/12u.html">12U</a></li>
-                  <li><a href="figures/youth-13-15.html">13 - 15 (Youth)</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="elements.html">Elements</a>
-                <ul class="dropdown__menu nested">
-                  <li><a href="elements/solo-technical.html">Solo Technical</a></li>
-                  <li><a href="elements/duet-technical.html">Duet Technical</a></li>
-                  <li><a href="elements/mixed-duet-technical.html">Mixed Duet Technical</a></li>
-                  <li><a href="elements/junior.html">Team Technical</a></li>
-                </ul>
-              </li>
+              <li><a href="figures.html">Figures</a></li>
+              <li><a href="elements.html">Elements</a></li>
             </ul>
           </li>
 
@@ -50,14 +42,14 @@
 
   <main class="site-main">
     <!-- Hero / Welcome section -->
-    <section class="hero">
+    <section class="hero reveal">
       <h1>Welcome to Sway</h1>
       <p class="lead">A curated catalogue of skills and figures across age categories — clear, concise, and mobile-friendly.</p>
       <p class="cta"><a class="btn" href="library.html">Explore the Library</a></p>
     </section>
 
     <!-- Short explainer -->
-    <section class="about">
+    <section class="about reveal">
       <h2>What you'll find</h2>
       <ul>
         <li>Skill lists organized by age group (Figures & Elements)</li>
@@ -70,5 +62,6 @@
   <footer class="site-footer">
     <p>© Sway</p>
   </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>

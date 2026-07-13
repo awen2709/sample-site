@@ -9,6 +9,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="page--fade">
+  <!-- Floating particles container -->
+  <div class="particles-container">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+  </div>
   <!-- Include the same header markup as index (kept inline for static pages) -->
   <header class="site-header" role="banner">
     <div class="container--nav">
@@ -19,23 +26,8 @@
           <li class="dropdown">
             <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Library ▾</button>
             <ul class="dropdown__menu">
-              <li class="submenu">
-                <a href="figures.html">Figures</a>
-                <ul class="dropdown__menu nested">
-                  <li><a href="figures/10u.html">10U</a></li>
-                  <li><a href="figures/12u.html">12U</a></li>
-                  <li><a href="figures/youth-13-15.html">13 - 15 (Youth)</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="elements.html">Elements</a>
-                <ul class="dropdown__menu nested">
-                  <li><a href="elements/solo-technical.html">Solo Technical</a></li>
-                  <li><a href="elements/duet-technical.html">Duet Technical</a></li>
-                  <li><a href="elements/mixed-duet-technical.html">Mixed Duet Technical</a></li>
-                  <li><a href="elements/junior.html">Team Technical</a></li>
-                </ul>
-              </li>
+              <li><a href="figures.html">Figures</a></li>
+              <li><a href="elements.html">Elements</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
@@ -46,7 +38,7 @@
 
   <main class="site-main">
     <!-- Search area: large search bar. Without JS, this is a placeholder that submits to the same page. -->
-    <section class="search-hero">
+    <section class="search-hero reveal">
       <h1>Search the Library</h1>
       <form class="search-form" action="library.html" method="get" role="search" aria-label="Search pages">
         <!-- The name "q" reserves the parameter for future enhancement. -->
@@ -56,16 +48,16 @@
       <p class="search-note">(Search currently displays the library hub. Client-side search can be added later.)</p>
     </section>
 
-    <section class="library-links">
+    <section class="library-links reveal">
       <h2>Quick links</h2>
       <div class="grid">
-        <a class="card" href="figures/10u.html">Figures — 10U</a>
-        <a class="card" href="figures/12u.html">Figures — 12U</a>
-        <a class="card" href="figures/youth-13-15.html">Figures — 13 - 15 (Youth)</a>
-        <a class="card" href="elements/solo-technical.html">Elements — Solo Technical</a>
-        <a class="card" href="elements/duet-technical.html">Elements — Duet Technical</a>
-        <a class="card" href="elements/mixed-duet-technical.html">Elements — Mixed Duet Technical</a>
-        <a class="card" href="elements/junior.html">Elements — Team Technical</a>
+        <a class="card reveal" href="figures/10u.html">Figures — 10U</a>
+        <a class="card reveal" href="figures/12u.html">Figures — 12U</a>
+        <a class="card reveal" href="figures/youth-13-15.html">Figures — 13 - 15 (Youth)</a>
+        <a class="card reveal" href="elements/solo-technical.html">Elements — Solo Technical</a>
+        <a class="card reveal" href="elements/duet-technical.html">Elements — Duet Technical</a>
+        <a class="card reveal" href="elements/mixed-duet-technical.html">Elements — Mixed Duet Technical</a>
+        <a class="card reveal" href="elements/junior.html">Elements — Team Technical</a>
       </div>
     </section>
   </main>
@@ -73,5 +65,6 @@
   <footer class="site-footer">
     <p>© Sway</p>
   </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>
