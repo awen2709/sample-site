@@ -91,4 +91,23 @@ a:focus, button:focus, .search-input:focus{outline:3px solid rgba(111,210,255,0.
 /* Contact page links */
 .contact-list a{color:#ffffff}
 
+/* Figure page: split top/bottom layout for image + tips/media */
+.figure-split{display:flex;flex-direction:column;gap:16px;min-height:64vh}
+.figure-header{margin-bottom:6px}
+.figure-top{flex:1;display:flex}
+.figure-bottom{flex:1;display:flex;flex-direction:column;gap:12px}
+.figure-image{flex:1;border-radius:10px;background:linear-gradient(180deg, rgba(111,210,255,0.04), rgba(255,255,255,0.02));border:1px dashed rgba(255,255,255,0.04);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600;padding:18px}
+.tips{padding:8px}
+.tips .placeholder{color:var(--muted);background:rgba(255,255,255,0.015);padding:12px;border-radius:8px}
+.media-links{padding:8px}
+.media-links ul{margin:8px 0 0 0;padding-left:1rem}
+.media-links a{color:var(--accent);text-decoration:none}
+.media-links a:hover{text-decoration:underline}
+
+@media (min-width:900px){
+  /* on wide screens keep same vertical split but allow bottom content to be a row */
+  .figure-bottom{flex-direction:row;align-items:flex-start}
+  .tips,.media-links{flex:1}
+}
+
 /* end of style.css */
